@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EmailScreenController">
+   <top>
+      <Pane prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBack" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="Back" />
+            <TextField fx:id="tfSenderEmail" layoutX="292.0" layoutY="16.0" promptText="email address" />
+            <Button fx:id="btnRecipients" layoutX="470.0" layoutY="16.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="133.0" text="Select Recipients" />
+            <Button fx:id="btnSend" layoutX="663.0" layoutY="16.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="114.0" text="Send" />
+            <Label layoutX="128.0" layoutY="21.0" text="Sender Gmail Address:" />
+            <Label layoutX="118.0" layoutY="49.0" text="Sender Gmail Password:" />
+            <PasswordField fx:id="password" layoutX="292.0" layoutY="44.0" promptText="password" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="501.0" prefWidth="205.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cbStudents" layoutX="29.0" layoutY="30.0" prefWidth="150.0" />
+            <Button fx:id="btnView" layoutX="30.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="View" />
+            <Label layoutX="23.0" layoutY="7.0" text="View Individual Student" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <TextArea fx:id="recipientsBox" prefHeight="518.0" prefWidth="149.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <TextArea fx:id="emailBody" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <TextArea fx:id="confirmationBox" prefHeight="154.0" prefWidth="437.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>

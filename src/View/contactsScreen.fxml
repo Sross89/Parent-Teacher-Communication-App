@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ContactsScreenController">
+   <children>
+      <Pane prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnAdd" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" text="Add Recipient =&gt;" />
+            <Button fx:id="btnRemove" layoutX="184.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" text="&lt;= Remove Recipient" />
+            <Button fx:id="btnAddAll" layoutX="382.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Add All" />
+            <Button fx:id="btnConfirm" layoutX="495.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Confirm" />
+         </children>
+      </Pane>
+      <HBox prefHeight="357.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="tableContacts" prefHeight="357.0" prefWidth="295.0" />
+            <Pane prefHeight="357.0" prefWidth="67.0" />
+            <TableView fx:id="tableRecipients" layoutX="10.0" layoutY="10.0" prefHeight="357.0" prefWidth="308.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

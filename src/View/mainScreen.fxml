@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1207.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainScreenController">
+   <top>
+      <Pane prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #9E84AB; -fx-border-color: #000000; -fx-border-width: 2;" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Student Tracker and Communications Assistant">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="389.0" prefWidth="205.0" style="-fx-background-color: #9E84AB; -fx-border-color: #000000; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnImport" layoutX="14.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="175.0" text="Import Data" />
+            <Pane layoutX="9.0" layoutY="371.0" prefHeight="100.0" prefWidth="187.0" style="-fx-background-color: #DCDCDC;">
+               <children>
+                  <Button fx:id="btnAnalytics" layoutX="33.0" layoutY="24.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="122.0" text="Run Analytics" />
+               </children>
+            </Pane>
+            <Button fx:id="btnSave" layoutX="9.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="185.0" text="Save &amp; Commit Data" />
+            <Button fx:id="btnDirectory" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" text="Browse" />
+            <DatePicker fx:id="endDatePicker" layoutX="14.0" layoutY="247.0" prefHeight="25.0" prefWidth="175.0" />
+            <Label layoutX="14.0" layoutY="229.0" text="Course End Date:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNewCourse" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="New Course:" />
+            <TextField fx:id="courseNameLabel" layoutX="14.0" layoutY="166.0" promptText="Course Name:" />
+            <Button fx:id="btnCreateCourse" layoutX="14.0" layoutY="280.0" mnemonicParsing="false" prefWidth="175.0" text="Create Course " />
+            <Label layoutX="14.0" layoutY="14.0" text="Course Directory:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="directoryLabel" layoutX="88.0" layoutY="43.0" />
+            <Button fx:id="btnNewDirectory" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Browse" />
+            <Label fx:id="newDirectoryLabel" layoutX="88.0" layoutY="202.0" text="directory path" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
